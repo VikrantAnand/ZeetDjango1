@@ -1,0 +1,70 @@
+.box{
+    overflow: auto;
+    background: white;
+    width: 70%;
+    margin: auto;
+}
+
+.user{
+    font-size: 15px;
+    color: darkslateblue;    
+}
+
+.pass{
+    font-size: 15px;
+    color: darkslateblue;
+}
+
+.mail{
+    border:0;
+    display: block;
+    margin : 20px auto;
+    border: 2px solid #cbcccc;
+    padding: 14px 10px ;
+    width : 90%;
+    outline : none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.btn{
+    border:0;
+    margin : 20px auto;
+    padding: 10px 50px ;
+    width: 160px;
+    color :white;
+    border-radius: 24px;
+    background-color:darkblue;
+}
+.navbar{
+    background-color: darkblue;
+    font-size: larger;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-brand{
+    color:white;
+    border-radius: 20px;
+    padding: 5px;
+}
+.navbar-light .navbar-brand:hover{
+    color:skyblue;
+    /* background-color: lightblue; */
+}
+.navbar-light .navbar-nav .nav-link:hover {
+color: skyblue;
+/* background-color: lightblue; */
+}
+.log{
+    margin: 5px;
+}
+.btn:hover{
+    color: skyblue;
+
+}
+.last{
+    width: 20%;
+    margin: 10px auto;
+    text-align: center;
+}

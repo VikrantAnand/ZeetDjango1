@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productadd</title>
+    <style>
+        .forminput label,form.forminput input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form class="forminput" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label class="input" for="name">Enter product name</label>
+        <input placeholder="Enter product name" class="input" type="text" name="name" id="name">
+ 
+        <label class="input" for="description">Enter product description</label>
+        <input placeholder="Enter product desciption" class="input" type="text" name="description" id="description">
+ 
+        <label class="input" for="price">Enter product price</label>
+        <input placeholder="Enter product size" class="input" type="text" name="price" id="price">
+ 
+        <label class="input" for="image">Enter product image</label>
+        <input placeholder="Upload product image" class="input" type="file" name="image" id="image">
+ 
+        <label class="input" for="review">Enter product review</label>
+        <input placeholder="Enter product review" class="input" type="text" name="review" id="review">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

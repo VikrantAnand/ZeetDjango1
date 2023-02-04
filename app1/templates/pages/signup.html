@@ -1,0 +1,47 @@
+{% extends 'pages/base.html' %}
+{%load static%}
+{% block signup %}
+<title>Signup</title>
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <div>
+        <div class="log">
+        <h1 class="login">Register form</h1>
+        </div>
+    </div>
+
+<div class="parent">
+    <form method='POST'>
+    {% csrf_token %}
+    <div class="box">
+
+        <div class="user">
+            <label for="text"> <b> Name</b></label>    
+            <input type="name" placeholder="Username" name="name" class="mail">
+        </div>
+
+        <div class="user">
+        <label for="email"> <b>  Email</b></label>
+        <input type="email" placeholder=" Email" name="email" class="mail" required>
+        </div>
+        
+        <div class="user">
+            <label for="number"> <b> Contact no</b></label>
+            <input type="number" placeholder="number" name="number" class="mail">
+        </div>
+    
+        <div class="pass">
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Password" class="mail" name="password" required>
+        </div>
+    
+        <div>
+        <input class="btn" type="submit" value="Sign up">
+        </div>
+        <p>Already have an account login instead</p>
+        <a href="{% url 'login' %}" class="btn">Login</a>
+    </div>
+    </form>
+
+</div>
+
+{%endblock signup%}
